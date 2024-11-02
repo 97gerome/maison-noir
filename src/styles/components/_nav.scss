@@ -1,0 +1,18 @@
+@use "../abstracts" as *;
+
+.nav {
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  display: flex;
+  color: $grey-goose;
+
+  &__item {
+    text-align: end;
+    margin-bottom: 10px;
+  }
+
+  &__link {
+    display: block;
+  }
+}
