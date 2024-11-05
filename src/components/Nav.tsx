@@ -16,7 +16,7 @@ const navLinkInitial: AnimationProps["initial"] = {
 };
 
 const Nav: FC = () => {
-  const { handleHoverEnter, handleHoverLeave } = useCursor();
+  const { handleHoverStart, handleHoverEnd } = useCursor();
 
   const navigate = useNavigate();
 
@@ -29,8 +29,8 @@ const Nav: FC = () => {
               className="nav__link"
               onClick={() => navigate(url)}
               initial={navLinkInitial}
-              onHoverStart={handleHoverEnter}
-              onHoverEnd={handleHoverLeave}
+              onHoverStart={handleHoverStart}
+              onHoverEnd={handleHoverEnd}
             >
               {title}
             </motion.a>

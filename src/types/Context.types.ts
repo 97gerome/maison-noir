@@ -8,6 +8,6 @@ export interface LayoutContext {
 export interface CursorContext {
   position: CursorPosition;
   isHovering: boolean;
-  handleHoverEnter: () => void;
-  handleHoverLeave: () => void;
+  handleHoverStart: () => void;
+  handleHoverEnd: () => void;
 }

@@ -15,11 +15,11 @@ const App: FC = () => {
   const [isCursorVisible, setIsCursorVisible] = useState<boolean>(false);
   const [isHovering, setIsHovering] = useState<boolean>(false);
 
-  const handleHoverEnter = (): void => {
+  const handleHoverStart = (): void => {
     setIsHovering(true);
   };
 
-  const handleHoverLeave = (): void => {
+  const handleHoverEnd = (): void => {
     setIsHovering(false);
   };
 
@@ -59,8 +59,8 @@ const App: FC = () => {
           value={{
             position: cursorPosition,
             isHovering,
-            handleHoverEnter,
-            handleHoverLeave,
+            handleHoverStart,
+            handleHoverEnd,
           }}
         >
           <RouterProvider router={router} />
