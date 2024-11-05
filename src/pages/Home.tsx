@@ -39,7 +39,7 @@ const Home: FC = () => {
       await animate(
         "#diamond_1",
         { pathLength: 1 },
-        { duration: 0.75, ease: "linear" }
+        { duration: 0.75, ease: "linear", delay: 0.5 }
       );
       await Promise.all([
         animate("#heading_m", { opacity: 1 }, { delay: 0.2 }),
