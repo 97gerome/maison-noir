@@ -1,9 +1,5 @@
 import { useOutletContext } from "react-router-dom";
-
-export interface LayoutContext {
-  isHeaderVisible: boolean;
-  toggleIsHeaderVisible: () => void;
-}
+import { LayoutContext } from "../types/Context.types";
 
 const useLayout = () => {
   return useOutletContext<LayoutContext>();
