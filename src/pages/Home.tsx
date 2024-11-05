@@ -111,13 +111,13 @@ const Home: FC = () => {
         >
           <rect x="385" y="104" width="500" height="500" fill="#D9D9D9" />
         </mask>
-        <motion.path
-          id="diamond_1"
-          d="M282.154 354L635 1.15369L987.846 354L635 706.846L282.154 354Z"
-          stroke="#D2D2D2"
-          initial={diamond1Initial}
-        />
         <g mask="url(#image_mask)">
+          <motion.path
+            id="diamond_1"
+            d="M282.154 354L635 1.15369L987.846 354L635 706.846L282.154 354Z"
+            stroke="#D2D2D2"
+            initial={diamond1Initial}
+          />
           <motion.rect
             id="hero_image"
             x="335"
