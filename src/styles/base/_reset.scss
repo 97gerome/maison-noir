@@ -11,6 +11,11 @@
   padding: 0;
   border: 0;
   font: inherit;
+  cursor: none;
+
+  &:hover {
+    cursor: none;
+  }
 }
 
 html,
