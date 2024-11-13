@@ -12,9 +12,15 @@
   border: 0;
   font: inherit;
   cursor: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 
   &:hover {
     cursor: none;
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
   }
 }
 
