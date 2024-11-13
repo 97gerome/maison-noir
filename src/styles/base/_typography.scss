@@ -1,8 +1,13 @@
-@use "../abstracts" as *;
+@use "../abstracts";
 
 p,
 a {
   font-family: "Montserrat";
+  font-size: abstracts.pxToVw(16px);
+}
+
+p {
+  font-weight: 200;
 }
 
 h1,
@@ -12,5 +17,30 @@ h4,
 h5,
 h6 {
   font-family: "Raleway";
-  color: $porcelain;
+  color: abstracts.$porcelain;
+  font-weight: 100;
+}
+
+h1 {
+  font-size: abstracts.pxToVw(196px);
+}
+
+h2 {
+  font-size: abstracts.pxToVw(128px);
+}
+
+h3 {
+  font-size: abstracts.pxToVw(96px);
+}
+
+h4 {
+  font-size: abstracts.pxToVw(64px);
+}
+
+h5 {
+  font-size: abstracts.pxToVw(48px);
+}
+
+h6 {
+  font-size: abstracts.pxToVw(32px);
 }
