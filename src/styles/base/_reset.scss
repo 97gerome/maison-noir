@@ -37,3 +37,15 @@ ol {
 a {
   cursor: pointer;
 }
+
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+}
