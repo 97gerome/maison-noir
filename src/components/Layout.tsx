@@ -6,20 +6,21 @@ import { LayoutContext } from "../types/Context.types";
 const Layout: FC = () => {
   const [isHeaderVisible, setisHeaderVisible] = useState<boolean>(false);
 
-  const toggleIsHeaderVisible = (): void => {
-    setisHeaderVisible((current) => !current);
+  const showHeader = (): void => {
+    setisHeaderVisible(true);
+  };
+  const hideHeader = (): void => {
+    setisHeaderVisible(false);
   };
 
   return (
     <div className="layout">
       {isHeaderVisible && <Header />}
-      <main>
-        <Outlet
-          context={
-            { isHeaderVisible, toggleIsHeaderVisible } satisfies LayoutContext
-          }
-        />
-      </main>
+      <Outlet
+        context={
+          { isHeaderVisible, showHeader, hideHeader } satisfies LayoutContext
+        }
+      />
     </div>
   );
 };

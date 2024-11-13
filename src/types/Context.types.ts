@@ -2,7 +2,8 @@ import { CursorPosition } from "./Cursor.types";
 
 export interface LayoutContext {
   isHeaderVisible: boolean;
-  toggleIsHeaderVisible: () => void;
+  showHeader: () => void;
+  hideHeader: () => void;
 }
 
 export interface CursorContext {

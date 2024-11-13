@@ -31,7 +31,7 @@ const heroImageInitial: AnimationProps["initial"] = {
 };
 
 const Home: FC = () => {
-  const { isHeaderVisible, toggleIsHeaderVisible } = useLayout();
+  const { isHeaderVisible, showHeader } = useLayout();
   const [scope, animate] = useAnimate();
 
   useEffect(() => {
@@ -86,9 +86,9 @@ const Home: FC = () => {
     };
 
     animateHeroEntrance().then(() => {
-      if (!isHeaderVisible) toggleIsHeaderVisible();
+      if (!isHeaderVisible) showHeader();
     });
-  }, [isHeaderVisible, toggleIsHeaderVisible, animate]);
+  }, [isHeaderVisible, showHeader, animate]);
 
   return (
     <div className="home" ref={scope}>
