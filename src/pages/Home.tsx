@@ -1,6 +1,6 @@
 import { FC, useEffect } from "react";
 import { useAnimate, motion, AnimationProps, stagger } from "framer-motion";
-import heroImage from "../assets/home-hero-image.jpg";
+import heroImage from "../assets/images/home-hero-image.jpg";
 import useLayout from "../hooks/useLayout";
 
 const diamond1Initial: AnimationProps["initial"] = {
