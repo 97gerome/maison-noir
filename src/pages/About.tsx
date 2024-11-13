@@ -96,12 +96,12 @@ const About: FC = () => {
           <h4 className="about-experience__tagline">YEARS OF EXPERIENCE</h4>
         </div>
       </section>
-      <section className="our-team">
-        <div className="our-team__container--heading">
-          <h2 className="our-team__heading">MEET OUR TEAM</h2>
+      <section className="about-team">
+        <div className="about-team__container--heading">
+          <h2 className="about-team__heading">MEET OUR TEAM</h2>
         </div>
         <Carousel
-          className="our-team__carousel"
+          className="about-team__carousel"
           data={teamMembers}
           renderComponent={(data) => <TeamCard {...data} />}
         ></Carousel>
