@@ -1,0 +1,5 @@
+@use "variables";
+
+@function pxToVw($val) {
+  @return calc($val/variables.$viewportWidth) * 100vw;
+}
