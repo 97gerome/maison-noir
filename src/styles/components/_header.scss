@@ -1,9 +1,13 @@
+@use "../abstracts";
+
 .header {
   &__logo {
     position: fixed;
-    height: 60px;
-    width: 60px;
-    top: 30px;
-    left: 40px;
+    height: abstracts.pxToVw(50px);
+    width: abstracts.pxToVw(50px);
+    top: abstracts.pxToVw(40px);
+    left: abstracts.pxToVw(40px);
+    mix-blend-mode: difference;
+    z-index: 999;
   }
 }

@@ -1,18 +1,20 @@
-@use "../abstracts" as *;
+@use "../abstracts";
 
 .nav {
   position: fixed;
-  top: 40px;
-  right: 40px;
+  top: abstracts.pxToVw(40px);
+  right: abstracts.pxToVw(40px);
   display: flex;
-  color: $grey-goose;
+  color: abstracts.$grey-goose;
+  z-index: 999;
 
   &__item {
     text-align: end;
-    margin-bottom: 10px;
+    margin-bottom: abstracts.pxToVw(10px);
   }
 
   &__link {
     display: block;
+    font-size: abstracts.pxToVw(14px);
   }
 }
