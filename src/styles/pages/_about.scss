@@ -1,0 +1,95 @@
+@use "../abstracts";
+
+.about {
+  max-height: 100vh;
+  max-width: 100vw;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.about-intro {
+  padding-top: abstracts.pxToVw(150px);
+  margin-bottom: abstracts.pxToVw(170px);
+
+  &__heading {
+    margin-bottom: abstracts.pxToVw(85px);
+    padding-left: abstracts.pxToVw(80px);
+  }
+
+  &__container {
+    position: relative;
+    display: flex;
+  }
+
+  &__desc {
+    margin-left: abstracts.pxToVw(100px);
+    margin-bottom: abstracts.pxToVw(60px);
+  }
+
+  &__tagline {
+    margin-left: abstracts.pxToVw(120px);
+    margin-bottom: abstracts.pxToVw(40px);
+  }
+
+  &__name {
+    margin-left: abstracts.pxToVw(120px);
+  }
+
+  &__image {
+    margin-top: abstracts.pxToVw(190px);
+    margin-left: abstracts.pxToVw(90px);
+    max-width: abstracts.pxToVw(600px);
+    z-index: 1;
+  }
+
+  &__diamond {
+    position: absolute;
+    bottom: abstracts.pxToVw(-300px);
+    right: abstracts.pxToVw(-150px);
+    height: abstracts.pxToVw(800px);
+    width: abstracts.pxToVw(800px);
+    z-index: 0;
+  }
+}
+
+.about-experience {
+  margin-bottom: abstracts.pxToVw(120px);
+  &__container {
+    display: flex;
+  }
+
+  &__desc {
+    margin-left: abstracts.pxToVw(100px);
+    margin-top: abstracts.pxToVw(16px);
+  }
+
+  &__tagline {
+    margin-left: abstracts.pxToVw(195px);
+    margin-right: abstracts.pxToVw(195px);
+  }
+}
+
+.our-team {
+  width: 100vw;
+  background-color: abstracts.$porcelain;
+
+  &__container--heading {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__heading {
+    color: abstracts.$vampire-black;
+    text-align: center;
+  }
+
+  &__container--team-card {
+    padding-left: abstracts.pxToVw(50px);
+  }
+
+  &__carousel-track {
+    padding-right: abstracts.pxToVw(50px);
+  }
+}
