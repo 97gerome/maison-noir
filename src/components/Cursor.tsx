@@ -26,7 +26,7 @@ const Cursor: FC<CursorProps> = (props) => {
       animate(scope.current, { scale: 2, strokeWidth: 0.5 });
       animate("#cursor_inner_diamond", { opacity: 0 });
     } else {
-      animate(scope.current, { scale: 1 });
+      animate(scope.current, { scale: 1, strokeWidth: 1 });
       animate("#cursor_inner_diamond", { opacity: 1 });
     }
   }, [animate, scope, isHovering]);
