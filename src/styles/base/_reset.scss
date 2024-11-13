@@ -1,4 +1,4 @@
-@use "../abstracts" as *;
+@use "../abstracts";
 
 *,
 *:before,
@@ -28,10 +28,11 @@ html,
 body {
   height: 100vh;
   overflow: hidden;
-  background-color: $romance;
+  background-color: abstracts.$romance;
 }
 
 body {
+  color: abstracts.$grey-goose;
   -webkit-font-smoothing: antialiased;
 }
 
