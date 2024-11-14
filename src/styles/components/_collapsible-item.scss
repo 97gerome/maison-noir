@@ -1,0 +1,46 @@
+@use "../abstracts";
+
+.collapsible-item {
+  display: flex;
+
+  &__container--step {
+    position: relative;
+    width: abstracts.pxToVw(85px);
+    display: flex;
+    justify-content: center;
+  }
+
+  &__step {
+    height: abstracts.pxToVw(85px);
+    width: abstracts.pxToVw(85px);
+    font-family: "Raleway";
+    font-weight: 100;
+    font-size: 48px;
+    z-index: 1;
+  }
+
+  &__track {
+    position: absolute;
+    top: abstracts.pxToVw(42.5px);
+    height: calc(100% + abstracts.pxToVw(70px));
+    width: abstracts.pxToVw(1px);
+    background-color: #fff;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    line-height: abstracts.pxToVw(85px);
+    padding-left: abstracts.pxToVw(30px);
+    cursor: pointer;
+  }
+
+  &__wrapper-body {
+    height: 0;
+    margin-left: abstracts.pxToVw(50px);
+    overflow: hidden;
+  }
+
+  &__body {
+    padding-top: abstracts.pxToVw(30px);
+  }
+}
