@@ -83,6 +83,7 @@
   &__heading {
     color: abstracts.$vampire-black;
     text-align: center;
+    text-transform: uppercase;
   }
 
   &__container--team-card {
@@ -91,5 +92,77 @@
 
   &__carousel-track {
     padding-right: abstracts.pxToVw(50px);
+  }
+}
+
+.about-process {
+  padding: abstracts.pxToVw(60px) abstracts.pxToVw(80px);
+
+  &__heading {
+    text-transform: uppercase;
+    margin-bottom: abstracts.pxToVw(100px);
+  }
+
+  &__container--process {
+    margin-left: abstracts.pxToVw(40px);
+    margin-right: abstracts.pxToVw(200px);
+    margin-bottom: abstracts.pxToVw(150px);
+  }
+}
+
+.about-work-w-us {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__heading {
+    flex: 1 0 50%;
+    text-transform: uppercase;
+    padding-left: abstracts.pxToVw(80px);
+  }
+
+  &__content {
+    height: 100%;
+    flex: 1 0 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-left: abstracts.pxToVw(150px);
+    padding-right: abstracts.pxToVw(100px);
+    padding-bottom: 15vh;
+  }
+
+  &__text {
+    margin-bottom: abstracts.pxToVw(50px);
+  }
+}
+
+.about-footer {
+  height: abstracts.pxToVw(240px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__logo {
+    height: abstracts.pxToVw(70px);
+    width: abstracts.pxToVw(70px);
+    margin-bottom: abstracts.pxToVw(30px);
+  }
+
+  &__copyright {
+    font-size: abstracts.pxToVw(14px);
+    margin-bottom: abstracts.pxToVw(25px);
+  }
+
+  &__container--socials {
+    display: flex;
+    gap: abstracts.pxToVw(15px);
+  }
+
+  &__social {
+    height: abstracts.pxToVw(25px);
+    width: abstracts.pxToVw(25px);
   }
 }
