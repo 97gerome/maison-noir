@@ -1,4 +1,4 @@
-import { FC, useEffect, useState } from "react";
+import { FC, useCallback, useEffect, useState } from "react";
 import { RouterProvider } from "react-router-dom";
 import router from "./router";
 import Cursor from "./components/Cursor";
@@ -15,13 +15,13 @@ const App: FC = () => {
   const [isCursorVisible, setIsCursorVisible] = useState<boolean>(false);
   const [isHovering, setIsHovering] = useState<boolean>(false);
 
-  const handleHoverStart = (): void => {
+  const handleHoverStart = useCallback((): void => {
     setIsHovering(true);
-  };
+  }, []);
 
-  const handleHoverEnd = (): void => {
+  const handleHoverEnd = useCallback((): void => {
     setIsHovering(false);
-  };
+  }, []);
 
   useEffect(() => {
     const onMouseMove = (e: MouseEvent): void => {
