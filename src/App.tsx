@@ -29,7 +29,7 @@ const App: FC = () => {
         setIsCursorVisible(true);
       }
 
-      setCursorPosition({ x: e.clientX - 16, y: e.clientY - 16 });
+      setCursorPosition({ x: e.clientX - 20, y: e.clientY - 20 });
     };
 
     const onMouseLeave = (): void => {
