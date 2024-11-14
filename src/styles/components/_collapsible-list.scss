@@ -1,0 +1,7 @@
+@use "../abstracts";
+
+.collapsible-list {
+  display: flex;
+  flex-direction: column;
+  gap: abstracts.pxToVw(70px);
+}
