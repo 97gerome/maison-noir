@@ -1,0 +1,12 @@
+@use "../abstracts";
+
+.button {
+  height: abstracts.pxToVw(50px);
+  padding: 0 abstracts.pxToVw(40px);
+  border: 1px solid abstracts.$grey-goose;
+  background-color: abstracts.$romance;
+  font-family: "Montserrat";
+  font-size: abstracts.pxToVw(16px);
+  color: abstracts.$grey-goose;
+  cursor: pointer;
+}
